@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import Welcome from './Props/welcome';
 import Clock from './Props/function';
-
+import NumberList from './Props/list_keys';
+import Greeting from './Props/condition_render';
+import Mailbox from './Props/condition_render';
+import MyForm from './Props/forms';
 function App() {
   function tick () {
     const element = (
@@ -16,10 +19,17 @@ function App() {
     
   }
   setInterval(tick, 1000);
+  const numbers = [1, 2, 3, 4, 5];
+  const messages = ['React', 'Re: React', 'Re:Re: React'];
   return (
     <div className="App">
-      <Welcome name = "Rutvi" address = "Ahmedabad" />
+      {/* <Welcome name = "Rutvi" address = "Ahmedabad" /> */}
       {/* <Clock/> */}
+      {/* {listItems} */}
+      {/* <NumberList numbers={numbers} /> */}
+      {/* <Greeting isLoggedIn={false} /> */}
+      {/* < Mailbox unreadMessages ={messages} /> */}
+      <MyForm/>
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
