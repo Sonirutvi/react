@@ -7,6 +7,10 @@ import NumberList from './Props/list_keys';
 import Greeting from './Props/condition_render';
 import Mailbox from './Props/condition_render';
 import MyForm from './Props/forms';
+import Calculator from './Props/calculator';
+import FancyBorder from './Props/fancyborder';
+import WelcomeDialog from './Props/dialog';
+import SignUpDialog from './Props/signupdialog';
 function App() {
   function tick () {
     const element = (
@@ -21,6 +25,7 @@ function App() {
   setInterval(tick, 1000);
   const numbers = [1, 2, 3, 4, 5];
   const messages = ['React', 'Re: React', 'Re:Re: React'];
+ 
   return (
     <div className="App">
       {/* <Welcome name = "Rutvi" address = "Ahmedabad" /> */}
@@ -29,7 +34,10 @@ function App() {
       {/* <NumberList numbers={numbers} /> */}
       {/* <Greeting isLoggedIn={false} /> */}
       {/* < Mailbox unreadMessages ={messages} /> */}
-      <MyForm/>
+      {/* <MyForm/> */}
+      {/* <Calculator/> */}
+      {/* <WelcomeDialog/> */}
+      <SignUpDialog/>
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
