@@ -7,10 +7,11 @@ import NumberList from './Props/list_keys';
 import Greeting from './Props/condition_render';
 import Mailbox from './Props/condition_render';
 import MyForm from './Props/forms';
-import Calculator from './Props/calculator';
+// import Calculator from './Props/calculator';
 import FancyBorder from './Props/fancyborder';
 import WelcomeDialog from './Props/dialog';
 import SignUpDialog from './Props/signupdialog';
+import Calculator from './ClassCom/calculator';
 function App() {
   function tick () {
     const element = (
@@ -37,7 +38,8 @@ function App() {
       {/* <MyForm/> */}
       {/* <Calculator/> */}
       {/* <WelcomeDialog/> */}
-      <SignUpDialog/>
+      {/* <SignUpDialog/> */}
+      <Calculator/>
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
