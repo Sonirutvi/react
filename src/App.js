@@ -12,6 +12,11 @@ import FancyBorder from './Props/fancyborder';
 import WelcomeDialog from './Props/dialog';
 import SignUpDialog from './Props/signupdialog';
 import Calculator from './ClassCom/calculator';
+import Example from './hooks/effect';
+import UseReducer from './hooks/usereduce';
+import TextInputWithFocusButton from './hooks/useref';
+import Test from './hooks/custom';
+
 function App() {
   function tick () {
     const element = (
@@ -39,7 +44,12 @@ function App() {
       {/* <Calculator/> */}
       {/* <WelcomeDialog/> */}
       {/* <SignUpDialog/> */}
-      <Calculator/>
+      {/* <Calculator/> */}
+      {/* <Example/> */}
+      {/* <UseReducer/> */}
+      {/* <TextInputWithFocusButton/> */}
+      <Test/>
+      
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
